@@ -13,7 +13,7 @@ for token in id['tokenIds']:
 for ids in tokens:
     print (f'Starting to upload {ids}')
     Item = {'tokenId': str(ids), 'isAvaiable':'false'}
-    postSaleUrl = 'https://5m7llgnq66.execute-api.us-east-2.amazonaws.com/token/token'
+    postSaleUrl = 'databaseURL'
     headers = {'Content-Type': 'application/json'}
     response = requests.post(url=postSaleUrl, data=json.dumps(Item))
     print (response.text)
